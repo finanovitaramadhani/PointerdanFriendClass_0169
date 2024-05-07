@@ -16,7 +16,18 @@ public:
 
 int main()
 {
+	mahasiswa mhs{ 1 }; // Object mhs
+	mhs.showNim(); // member Access Operator
 
+	mahasiswa& refmhs = mhs; //Pointer reference refmhs
+	refmhs.nim = 2; // member Access operator
+	mhs.showNim();
+
+	mahasiswa* pMhs = &mhs; //pointer deferences pmhs
+	pMhs->nim = 3; // Arrow Operator
+	pMhs->showNim();
+	return 0;
 }
+
 
 
